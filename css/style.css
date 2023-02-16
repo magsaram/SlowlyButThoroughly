@@ -1,0 +1,12 @@
+/* font-family: 'Josefin Sans', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif; */
+i {
+  font-size: 70px;
+  color: red;
+  text-align: center;
+  padding: 20px;
+  width: 70px;
+  height: 70px;
+  border: 2px solid red;
+  border-radius: 50%;
+}
