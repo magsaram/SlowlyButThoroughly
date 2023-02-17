@@ -5,8 +5,15 @@
   font-family: "Josefin Sans", sans-serif;
   scroll-behavior: smooth;
 }
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#top,
 #whoweare,
-#pricelist {
+#pricelist,
+#navaddress {
   scroll-margin-top: 60px;
 }
 #weoffer,
@@ -20,14 +27,14 @@
   top: 0;
   height: 40px;
   background-color: #333;
-  padding-left: 50vw;
+  padding-left: 10vw;
   padding-top: 3px;
   z-index: 1;
 }
-nav ul li {
+.menu ul li {
   display: inline-block;
 }
-nav ul li a {
+.menu ul li a {
   color: white;
   text-decoration: none;
   font-size: 20px;
@@ -36,11 +43,11 @@ nav ul li a {
   text-align: right;
   opacity: 1;
 }
-nav ul li a i {
+.menu ul li a i {
   margin-right: 10px;
   opacity: 0.5;
 }
-nav ul li a:hover i {
+.menu ul li a:hover i {
   opacity: 1;
   color: rgb(255, 159, 159);
 }
@@ -76,13 +83,63 @@ h1 span {
 h2 {
   font-size: 2rem;
   text-align: center;
-  margin: 20px auto;
+  margin: 40px auto;
   font-family: "Montserrat Alternates", sans-serif;
+  color: #91040d;
 }
 h3 {
   font-size: 2rem;
   padding-bottom: 30px;
 }
+.wrapper {
+  width: 80vw;
+  margin: 0 auto;
+}
+.who div {
+  width: 25%;
+  height: 200px;
+}
+.who p {
+  float: left;
+  width: 25%;
+  height: 200px;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 1.3em;
+  color: #555;
+}
+.whoimg1 {
+  float: left;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/weare1.jpg);
+  background-size: 100%;
+  border-radius: 20px 0 0 0;
+}
+
+.whoimg2 {
+  float: left;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/weare2.jpg);
+  background-size: cover;
+}
+.whoimg3 {
+  float: left;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/weare3.jpg);
+  background-size: cover;
+}
+.whoimg4 {
+  float: left;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/weare4.jpg);
+  background-size: cover;
+  border-radius: 0 0 20px 0;
+}
+
 .offer {
   background-image: url(../images/cartypes.jpg);
   height: 80vh;
@@ -110,4 +167,70 @@ h3 {
   background-attachment: fixed;
   color: white;
   position: relative;
+}
+.callus h2 {
+  position: absolute;
+  padding-top: 10px;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  font-size: 3rem;
+  cursor: default;
+  color: white;
+}
+.callus h2 span {
+  font-size: 4rem;
+  line-height: 5rem;
+}
+.bckadress {
+  background-image: url(../images/contactbcg.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80vh;
+  background-position: center;
+  position: relative;
+}
+.bckadress p {
+  position: absolute;
+  color: black;
+  font-size: 3rem;
+  top: 50%;
+  right: 50%;
+  transform: translate(+50%, -50%);
+  text-align: center;
+}
+footer {
+  width: 60vw;
+  margin: 20px auto;
+  padding-bottom: 10px;
+}
+footer div {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+footer div:nth-child(2) p,
+footer div:nth-child(2) nav {
+  float: left;
+  margin-right: 20px;
+}
+footer div:nth-child(2) nav ul li {
+  display: inline-block;
+  margin-right: 5px;
+  margin-left: 10px;
+}
+footer div:nth-child(2) nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+footer div:nth-child(2) nav ul li a i {
+  margin-right: 5px;
+  color: black;
+}
+footer div:nth-child(2) nav ul li a:hover i {
+  color: red;
+  opacity: 0.5;
 }
