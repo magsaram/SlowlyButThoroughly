@@ -201,8 +201,9 @@ h3 {
   width: 80px;
   height: 80px;
   margin-bottom: 30px;
+  padding: 5px;
   font-size: 60px;
-  line-height: 73px;
+  line-height: 62px;
   border: 4px solid #555;
   border-radius: 50%;
 }
