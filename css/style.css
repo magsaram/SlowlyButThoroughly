@@ -23,9 +23,9 @@
 .menu {
   position: fixed;
   width: 100vw;
+  height: 40px;
   left: 0;
   top: 0;
-  height: 40px;
   background-color: #333;
   padding-left: 10vw;
   padding-top: 3px;
@@ -35,12 +35,12 @@
   display: inline-block;
 }
 .menu ul li a {
-  color: white;
-  text-decoration: none;
   font-size: 20px;
+  text-decoration: none;
+  text-align: right;
+  color: white;
   line-height: 40px;
   margin: 0 30px;
-  text-align: right;
   opacity: 1;
 }
 .menu ul li a i {
@@ -48,48 +48,48 @@
   opacity: 0.5;
 }
 .menu ul li a:hover i {
-  opacity: 1;
   color: rgb(255, 159, 159);
+  opacity: 1;
 }
 header {
   position: relative;
-  margin-top: 40px;
   width: 100%;
   height: 100vh;
   background-image: url(../images/header.jpg);
   background-repeat: no-repeat;
   background-position: -20px;
   background-attachment: fixed;
+  margin-top: 40px;
 }
 h1 {
   position: absolute;
   width: 100%;
+  left: 0;
+  bottom: 35vh;
+  right: 0;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
-  bottom: 35vh;
-  left: 0;
-  right: 0;
-  padding: 20px 0 20px 100px;
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 4rem;
-  cursor: default;
   letter-spacing: 2px;
+  padding: 20px 0 20px 100px;
+  cursor: default;
 }
 h1 span {
+  padding-left: 30px;
   font-weight: 400;
   font-size: 2rem;
-  padding-left: 30px;
 }
 h2 {
-  font-size: 2rem;
-  text-align: center;
   margin: 40px auto;
   font-family: "Montserrat Alternates", sans-serif;
+  font-size: 2rem;
+  text-align: center;
   color: #91040d;
 }
 h3 {
-  font-size: 2rem;
   padding-bottom: 30px;
+  font-size: 2rem;
 }
 .wrapper {
   width: 80vw;
@@ -145,12 +145,7 @@ h3 {
   height: 430px;
   margin: 0 auto;
 }
-/* .packages {
-  position: absolute;
-  top: 50px;
-  left: 0;
-  width: 60%;
-} */
+
 .brown,
 .silver,
 .gold,
@@ -159,11 +154,11 @@ h3 {
   top: 50px;
   left: 0;
   width: 30%;
+  margin: 20px;
+  padding: 10px;
   font-size: 2em;
   text-align: center;
   border: 2px solid black;
-  margin: 20px;
-  padding: 10px;
   border-radius: 50px;
   cursor: pointer;
 }
@@ -196,20 +191,20 @@ h3 {
   top: 50px;
   width: 60%;
   padding: 40px;
+  margin-left: 20px;
   text-align: center;
   color: #555;
   font-size: 1.5em;
-  margin-left: 20px;
 }
 
 .fa-arrow-left {
   width: 80px;
   height: 80px;
+  margin-bottom: 30px;
   font-size: 60px;
+  line-height: 73px;
   border: 4px solid #555;
   border-radius: 50%;
-  line-height: 70px;
-  margin-bottom: 30px;
 }
 .choosebrown,
 .choosesilver,
@@ -242,8 +237,8 @@ h3 {
   display: none;
 }
 .offer {
-  background-image: url(../images/cartypes.jpg);
   height: 80vh;
+  background-image: url(../images/cartypes.jpg);
   background-attachment: fixed;
   color: white;
   position: relative;
@@ -263,20 +258,20 @@ h3 {
   margin-bottom: 30px;
 }
 .callus {
-  background-image: url(../images/contact.jpg);
+  position: relative;
   height: 80vh;
+  background-image: url(../images/contact.jpg);
   background-attachment: fixed;
   color: white;
-  position: relative;
 }
 .callus h2 {
   position: absolute;
   padding-top: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
   left: 0;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.6);
   text-align: center;
   font-size: 3rem;
   cursor: default;
@@ -287,20 +282,20 @@ h3 {
   line-height: 5rem;
 }
 .bckadress {
-  background-image: url(../images/contactbcg.jpg);
-  background-repeat: no-repeat;
+  position: relative;
   width: 100%;
   height: 80vh;
+  background-image: url(../images/contactbcg.jpg);
+  background-repeat: no-repeat;
   background-position: center;
-  position: relative;
 }
 .bckadress p {
   position: absolute;
-  color: black;
-  font-size: 3rem;
   top: 50%;
   right: 50%;
   transform: translate(+50%, -50%);
+  color: black;
+  font-size: 3rem;
   text-align: center;
   line-height: 180%;
 }
