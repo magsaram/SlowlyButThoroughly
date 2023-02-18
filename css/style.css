@@ -139,7 +139,29 @@ h3 {
   background-size: cover;
   border-radius: 0 0 20px 0;
 }
-
+.packages {
+  width: 30%;
+}
+.packages div {
+  width: 60%;
+  font-size: 2em;
+  text-align: center;
+  border: 2px solid black;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.packages div p {
+  transform: translateY(+10%);
+}
+.packages div:hover {
+  border: 4px solid #91040d;
+  padding: 8.5px;
+}
+.choose {
+  width: 70%;
+}
 .offer {
   background-image: url(../images/cartypes.jpg);
   height: 80vh;
@@ -201,6 +223,7 @@ h3 {
   right: 50%;
   transform: translate(+50%, -50%);
   text-align: center;
+  line-height: 180%;
 }
 footer {
   width: 60vw;
