@@ -103,9 +103,9 @@ h3 {
   float: left;
   width: 25%;
   height: 200px;
-  padding: 30px 20px;
+  padding: 25px 20px;
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1.1em;
   color: #555;
 }
 .whoimg1 {
@@ -139,28 +139,107 @@ h3 {
   background-size: cover;
   border-radius: 0 0 20px 0;
 }
-.packages {
-  width: 30%;
-}
-.packages div {
+.wrapperprice {
+  position: relative;
   width: 60%;
+  height: 430px;
+  margin: 0 auto;
+}
+/* .packages {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 60%;
+} */
+.brown,
+.silver,
+.gold,
+.platinum {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 30%;
   font-size: 2em;
   text-align: center;
   border: 2px solid black;
-  margin: 20px auto;
+  margin: 20px;
   padding: 10px;
   border-radius: 50px;
   cursor: pointer;
 }
+.silver {
+  top: 120px;
+}
+.gold {
+  top: 190px;
+}
+.platinum {
+  top: 260px;
+}
 .packages div p {
   transform: translateY(+10%);
 }
-.packages div:hover {
+.brown:hover,
+.silver:hover,
+.gold:hover,
+.platinum:hover {
   border: 4px solid #91040d;
   padding: 8.5px;
 }
-.choose {
-  width: 70%;
+.choosepackages,
+.choosebrown,
+.choosesilver,
+.choosegold,
+.chooseplatinum {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  width: 60%;
+  padding: 40px;
+  text-align: center;
+  color: #555;
+  font-size: 1.5em;
+  margin-left: 20px;
+}
+
+.fa-arrow-left {
+  width: 80px;
+  height: 80px;
+  font-size: 60px;
+  border: 4px solid #555;
+  border-radius: 50%;
+  line-height: 70px;
+  margin-bottom: 30px;
+}
+.choosebrown,
+.choosesilver,
+.choosegold,
+.chooseplatinum {
+  display: none;
+}
+.brown:hover ~ .choosebrown {
+  display: block;
+}
+.silver:hover ~ .choosesilver {
+  display: block;
+}
+.gold:hover ~ .choosegold {
+  display: block;
+}
+.platinum:hover ~ .chooseplatinum {
+  display: block;
+}
+.brown:hover ~ .choosepackages {
+  display: none;
+}
+.silver:hover ~ .choosepackages {
+  display: none;
+}
+.gold:hover ~ .choosepackages {
+  display: none;
+}
+.platinum:hover ~ .choosepackages {
+  display: none;
 }
 .offer {
   background-image: url(../images/cartypes.jpg);
